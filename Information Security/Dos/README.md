@@ -5,7 +5,7 @@ Dos[Denial of Service] 서비스 거부 공격이란?
 집중적으로 전송함으로써 표적이 되는 서버의 정상적인 기능을 방해하는 것
 ```
 
-1. Ping of Death
+1. Ping of Death <br>
    죽음의 핑
    * 명령을 전송할 때 패킷의 크기를 인터넷 프로토콜 허용 범위 이상으로 전송하여 공격 대상의 네트워크를 마비시키는 서비스 거부 공격 방법
    * 공격에 사용되는 큰 패킷은 수백 개의 패킷으로 분할되어 전송되는데, 공격대상은 분할된 대량의 패킷을 수신함으로써 분할되어 </br>
@@ -21,8 +21,8 @@ Dos[Denial of Service] 서비스 거부 공격이란?
 3. SYN Flooding
 4. TearDrop
 5. Land
-6. DDoS
-   Distributed Denial Of Service 분산 서비스 거부 (공격)
+6. DDoS <br>
+   Distributed Denial Of Service 분산 서비스 거부 (공격) <br>
    여러 곳에 분산된 공격 지점에서 한 곳의 서버에 대해 분산 서비스 공격을 수행하는 것으로, <br>
    네트워크에서 취약점이 있는 호스트들을 탐색한 후 이들 호스트들에 분산 서비스 공격용 툴을 설치하여 <br>
    에이전트로 만 후 DDoS 공격에 이용한다.
