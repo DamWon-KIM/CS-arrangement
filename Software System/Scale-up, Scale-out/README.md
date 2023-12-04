@@ -17,4 +17,4 @@
 
  ex)  RDB는 scale-out에 유리하지 않고 NoSQL은 scale-out에 유리하여 대용량 서비스에 적합하다
  
-[참고사이트](!https://wiznxt.tistory.com/975)
+[참고사이트](https://wiznxt.tistory.com/975)
