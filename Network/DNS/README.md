@@ -17,6 +17,7 @@ DNS란, 문자로 된 인터넷 주소를 숫자로 된 ip주소로 바꿔주는
    
 ### DNS 네트워크를 부하분산하기 위한 방안은?
 * (참고) authoritive DNS server
+* Round Robin
 * 로드밸런싱 Load Balancing
 
 
