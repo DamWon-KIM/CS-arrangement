@@ -1,6 +1,5 @@
 ### Tomcat이 정확히 어떤 역할을 하는 도구인가요?
 
-![web_server.jpg](web_server.jpg)
 * Apache </br>
   * Web Server</br>
   클라이언트에서 요청하는 HTTP 요청을 처리하는 웹 서버를 의미 </br>
@@ -18,6 +17,8 @@
   * Web application server : WAS </br>
   Java EE 기반으로 만들어졌으며, JSP와 Servlet을 구동하기 위한 서블릿 컨테이너 역할을 수행한다 </br>
   아파치 서버와는 다르게 DB연결, 다른 응용프로그램과 상호 작용 등 동적인 기능들을 사용할 수 있다
+
+![web_server.jpg](web_server.jpg)
 
 [참고블로그](https://bombo96.tistory.com/65)
 [참고블로그2](https://yon11b.tistory.com/63)
