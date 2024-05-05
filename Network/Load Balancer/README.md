@@ -3,6 +3,7 @@
 * Round Robin
   * 단순히 CPU 스케줄링의 Round Robin으로 분산하는 방식
   * Weighted Round Robin Scheduling - Round Robin 방식으로 분배하지만 서버의 가중치에 따라 요청의 분배가 더 하기도, 덜 하기도 한다
+  * ~네이버 클라우드 플랫폼에서 잘 쓰임
 
 * Least Connections
   * 연결 개수가 가장 적은 서버를 선택하는 방식
