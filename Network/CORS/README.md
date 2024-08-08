@@ -19,3 +19,51 @@
 이를 알기 위해선 브라우저의 CORS 동작 과정을 살펴 보아야 한다.
 
 ### CORS 동작 과정
+
+CORS 코딩
+예를 들면, jQuery는 Ajax 요청을 통해 http://api.example.com/api/data 엔드포인트에 GET 요청을 보내는데, 이 요청을 성공적으로 수행하려면, 서버에서 CORS를 설정해야 한다.
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JSP - Hello World</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            console.log("ready...");
+            let url2 = "http://localhost:8090/web07total_war_exploded/json_m_selectAll.do";
+            $.ajax({
+                url:url2, // <b> 서버의 CORS 허용이 필요한 주소 </b>
+                type:"get",//get
+                data:{},
+                dataType:"json", //xml,html,text
+                success:function(response){
+                    console.log(response);//파싱된 결과 객체
+                    let tag ='';
+
+                    for (let i = 0; i < response.length; i++) {
+                        tag += `<tr>
+                                      <td><a href="ajax_selectOne.do?num=\${response[i].num}">\${response[i].num}</a></td>
+                                      <td>\${response[i].id}</td>
+                                      <td>\${response[i].pw}</td>
+                                      <td>\${response[i].name}</td>
+                                      <td>\${response[i].tel}</td>
+                                  </tr>`;
+                    }
+
+                    $("#result").html(tag);
+                },
+                error:function(ex){
+                    console.log(ex);
+                }
+            });
+
+
+        });
+
+
+    </script>
+
+</head>
+<body>
+```
